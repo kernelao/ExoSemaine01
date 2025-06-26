@@ -1,5 +1,12 @@
+import exercices.Exo1JeuDevinette;
+import exercices.Exo1JeuDevinetteDoWhile;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        // Exercice 1 -- Jeu de devinette
+        Exo1JeuDevinette.lancer();
+        Exo1JeuDevinetteDoWhile.lancer();
+
     }
 }

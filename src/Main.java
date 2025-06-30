@@ -6,6 +6,7 @@ import exercices.Exo1JeuDevinetteDoWhile;
 import exercices.Exo2ChiffrementCesar;
 
 import tableaux.InverserTableau;
+import tableaux.SommeTableauxTries;
 import tableaux.TableauValeursAleatoires;
 
 public class Main {
@@ -22,8 +23,10 @@ public class Main {
         //InverserTableau.lancer();
 
         // Exercice 3B - Stocker un nombre (que l'utilisateur fourni) de chiffres aléatoire dans un tableau
-        TableauValeursAleatoires.lancer();
+        //TableauValeursAleatoires.lancer();
 
+        // Exercice 3C - Deux tableaux triés qu'on somme, le tableau resultant doit être trié
+        SommeTableauxTries.lancer();
 
 
 

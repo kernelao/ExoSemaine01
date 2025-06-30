@@ -6,6 +6,7 @@ import exercices.Exo1JeuDevinetteDoWhile;
 import exercices.Exo2ChiffrementCesar;
 
 import tableaux.InverserTableau;
+import tableaux.TableauValeursAleatoires;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +19,10 @@ public class Main {
         //Exo2ChiffrementCesar.lancer();
 
         // Exercice 3A - Tableau inversé
-        InverserTableau.lancer();
+        //InverserTableau.lancer();
+
+        // Exercice 3B - Stocker un nombre (que l'utilisateur fourni) de chiffres aléatoire dans un tableau
+        TableauValeursAleatoires.lancer();
 
 
 

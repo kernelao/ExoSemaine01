@@ -5,6 +5,7 @@ import exercices.Exo1JeuDevinetteDoWhile;
 
 import exercices.Exo2ChiffrementCesar;
 
+import tableaux.ConvertirTableauMatrice;
 import tableaux.InverserTableau;
 import tableaux.SommeTableauxTries;
 import tableaux.TableauValeursAleatoires;
@@ -26,8 +27,10 @@ public class Main {
         //TableauValeursAleatoires.lancer();
 
         // Exercice 3C - Deux tableaux triés qu'on somme, le tableau resultant doit être trié
-        SommeTableauxTries.lancer();
+        //SommeTableauxTries.lancer();
 
+        // Exercice 3D - Convertir un tableau 2D en forme d'affichage de matrice
+        ConvertirTableauMatrice.lancer();
 
 
 

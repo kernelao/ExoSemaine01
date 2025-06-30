@@ -18,7 +18,7 @@ public class TableauValeursAleatoires {
 
     }
 
-    private static int demanderNombreUtilisateur() {
+    public static int demanderNombreUtilisateur() {
 
         Scanner clavier = new Scanner(System.in);
         int nombreAGenerer;

@@ -1,10 +1,3 @@
-import java.util.Random;
-
-import exercices.Exo1JeuDevinette;
-import exercices.Exo1JeuDevinetteDoWhile;
-
-import exercices.Exo2ChiffrementCesar;
-
 import tableaux.*;
 
 public class Main {
@@ -24,13 +17,13 @@ public class Main {
         //TableauValeursAleatoires.lancer();
 
         // Exercice 3C - Deux tableaux triés qu'on somme, le tableau resultant doit être trié
-        //SommeTableauxTries.lancer();
+        FusionTableauxTries.lancer();
 
         // Exercice 3D - Convertir un tableau 2D en forme d'affichage de matrice
         //ConvertirTableauMatrice.lancer();
 
         // Exercice 3E - Transposer une matrice, donc les lignes deviennent des colonnes et inversement
-        TranspositionTableau.lancer();
+        //TranspositionTableau.lancer();
 
     }
 }

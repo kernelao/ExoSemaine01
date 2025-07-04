@@ -1,9 +1,8 @@
 package tableaux;
 
 import java.util.Scanner;
-import java.math.*;
 
-public class SommeTableauxTries {
+public class FusionTableauxTries {
 
 
     private static int demanderTailleTableau() {
@@ -102,6 +101,29 @@ public class SommeTableauxTries {
         }
     }
 
+    private static int[] fusionnerTableau(int[] tableau1, int[] tableau2) {
+
+        int taille1 = tableau1.length;
+        int taille2 = tableau2.length;
+        int[] tableauFusion = new int[taille1 + taille2];
+
+        // Étant des tableaux statiques, on ne peut plus les agrandir
+        // On copie le premier tableau dans le nouveau tableau
+        for (int i = 0; i < taille1; i++) {
+            tableauFusion[i] = tableau1[i];
+        }
+
+        // On copie le deuxieme tableau dans le nouveau aussi
+        int j = 0;
+        // On copie à partir de la valeur (taille du tableau 1) jusqu'à la fin
+        for (int i = taille1; i < tableauFusion.length; i++) {
+            tableauFusion[i] = tableau2[j];
+            // On augmente l'index du tableau 2
+            j++;
+        }
+        return tableauFusion;
+    }
+
     public static void lancer() {
 
         // Demander à l'utilisateur une taille de tableau, nombre d'éléments
@@ -121,12 +143,16 @@ public class SommeTableauxTries {
         int[] tableauTrie2 = trierTableau(tableau2);
 
         // Sommer les deux tableaux et le trier
-        int[] tableauSommer = sommerTableau(tableau1, tableau2);
-        int[] tableauSommerTrie = trierTableau(tableauSommer);
+        //int[] tableauSommer = sommerTableau(tableau1, tableau2);
+        //int[] tableauSommerTrie = trierTableau(tableauSommer);
+
+        // Fusionner les deux tableaux et le trier
+        int[] tableauFusionne = fusionnerTableau(tableauTrie1, tableauTrie2);
+        int[] tableauFusionneTrie = trierTableau(tableauFusionne);
 
         // Affichage
-        for (int i = 0; i < tableauSommer.length; i++) {
-            System.out.println(tableauSommer[i]);
+        for (int i = 0; i < tableauFusionneTrie.length; i++) {
+            System.out.println(tableauFusionneTrie[i]);
         }
     }
 }

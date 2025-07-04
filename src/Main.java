@@ -5,10 +5,7 @@ import exercices.Exo1JeuDevinetteDoWhile;
 
 import exercices.Exo2ChiffrementCesar;
 
-import tableaux.ConvertirTableauMatrice;
-import tableaux.InverserTableau;
-import tableaux.SommeTableauxTries;
-import tableaux.TableauValeursAleatoires;
+import tableaux.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,9 +27,10 @@ public class Main {
         //SommeTableauxTries.lancer();
 
         // Exercice 3D - Convertir un tableau 2D en forme d'affichage de matrice
-        ConvertirTableauMatrice.lancer();
+        //ConvertirTableauMatrice.lancer();
 
-
+        // Exercice 3E - Transposer une matrice, donc les lignes deviennent des colonnes et inversement
+        TranspositionTableau.lancer();
 
     }
 }

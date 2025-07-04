@@ -26,6 +26,9 @@ public class Main {
         //TranspositionTableau.lancer();
 
         // Exercice 3F - Deux tableau 2D (deux matrices) à sommer
-        SommationMatrices.lancer();
+        //SommationMatrices.lancer();
+
+        // Exercice 3G - Sommation lignes/colonnes tableau 2D
+        SommationLignesColonnes.lancer();
     }
 }

@@ -29,7 +29,7 @@ public class SommationMatrices {
         return sommeMatrice;
     }
 
-    private static int[][] creerMatrice(int taille1, int taille2) {
+    public static int[][] creerMatrice(int taille1, int taille2) {
 
         Random random = new Random();
 
